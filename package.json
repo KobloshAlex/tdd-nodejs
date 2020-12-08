@@ -1,0 +1,53 @@
+{
+	"name": "tdd-nodejs",
+	"version": "1.0.0",
+	"description": "tdd",
+	"main": "app.js",
+	"scripts": {
+		"test": "jest --watch",
+		"start": "nodemon index"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KobloshAlex/tdd-nodejs.git"
+	},
+	"author": "KobloshAlex",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/KobloshAlex/tdd-nodejs/issues"
+	},
+	"homepage": "https://github.com/KobloshAlex/tdd-nodejs#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.0",
+		"express": "^4.17.1",
+		"sequelize": "^6.3.5",
+		"sqlite3": "^5.0.0"
+	},
+	"devDependencies": {
+		"jest": "^26.6.3",
+		"nodemon": "^2.0.6",
+		"supertest": "^6.0.1"
+	},
+	"eslintConfig": {
+		"ecmaVersion": 6
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:prettier/recommended"
+	],
+	"plugins": [
+		"prettier"
+	],
+	"env": {
+		"node": true,
+		"es6": true,
+		"jest": true
+	},
+	"rules": {
+		"semi": "warn",
+		"quotes": [
+			"warn",
+			"single"
+		]
+	}
+}
